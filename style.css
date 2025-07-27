@@ -13,12 +13,22 @@ body {
     align-items: center;
 }
 
-main {
-    height: 400px;
-    width: 600px;
+
+body{
+    margin-top: 70px;
+}
+.gameboard {
+    height: 500px;
+    width: 700px;
     background-color: #1B244A;
     color: #EEEEEE;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.spaced-evenly {
     justify-content: space-evenly;
 }
 
@@ -66,6 +76,14 @@ button {
     background-color: #1B244A;
     color: #9AABD8;
     font-family: 'Cursed Timer ULiL', sans-serif; 
+}
+
+.new-game {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    width: 200px;
+    margin-top: 20px;
 }
 
 

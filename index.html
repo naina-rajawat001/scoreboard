@@ -8,34 +8,40 @@
     <title>Document</title>
 </head>
 <body>
-    <main class="flex">
-        <section class="home-side flex">
-            <h1>
-                HOME
-            </h1>
-            <div class="score-box flex">
-                <p>0</p>
-            </div>
-            <div class="buttons">
-                <button>+1</button>
-                <button>+2</button>
-                <button>+3</button>
-            </div>
-        </section>
-        <section class="guest-side flex">
-            <h1>
-                GUEST
-            </h1>
-            <div class="score-box flex">
-               <p>0</p>
-            </div>
-            <div class="buttons">
-                <button>+1</button>
-                <button>+2</button>
-                <button>+3</button>
-            </div>
-        </section>
-    </main>
-
+    <main class="gameboard ">
+        <div class="flex spaced-evenly">
+            <section class="home-side flex">
+                <h1>
+                    HOME
+                </h1>
+                <div class="score-box flex">
+                    <p id="home-scoreboard-el">0</p>
+                </div>
+                <div class="buttons" >
+                    <button id="plus-one"  onclick="incrementTheScores(1,'home')">+1</button>
+                    <button  id="plus-two" onclick="incrementTheScores(2, 'home')">+2</button>
+                    <button  id="plus-three" onclick="incrementTheScores(3, 'home')">+3</button>
+                </div>
+                
+            </section>
+            <section class="guest-side flex">
+                <h1>
+                    GUEST
+                </h1>
+                <div class="score-box flex">
+                <p id="guest-scoreboard-el">0</p>
+                </div>
+                <div class="buttons">
+                    <button  id="plus-one" onclick="incrementTheScores(1)">+1</button>
+                    <button id="plus-two" onclick="incrementTheScores(2)">+2</button>
+                    <button id="plus-three" onclick="incrementTheScores(3)">+3</button>
+                </div>
+            </section>
+        </div>
+        <div >
+            <button class="new-game" onclick="reset()">New Game</button>
+        </div>
+     </main>   
+    <script src="script.js"></script>
 </body>
 </html>
